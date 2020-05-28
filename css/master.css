@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* reset dei margini */
 * {
   margin: 0;
@@ -11,8 +11,19 @@ body {
 main {
   margin-top: 60px;
 }
+p {
+  color: #5b6987;
+}
 h1, h2, h3, h4 {
   color: #031b4e;
+  font-weight: bold;
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
 }
 .my_button {
   color: #006aff;
@@ -20,7 +31,8 @@ h1, h2, h3, h4 {
   border: 1px solid #006aff;
   font-weight: bold;
 }
-.my_button:hover {
+.my_button:hover,
+.my_button:focus {
   color: #fff;
   background-color: #006aff;
   border: 1px solid #006aff;
@@ -69,13 +81,17 @@ header .navbar-fixed-top a:focus {
   color: #006aff !important;
 }
 header .navbar-brand {
-  padding: 10px 60px 10px 40px;
+  padding: 10px 10px 10px 40px;
 }
 header .navbar-brand img {
   height: 30px;
 }
+header .navbar-nav {
+  padding-left: 50px;
+}
 header .navbar-collapse a {
   color: #031b4e !important;
+  font-weight: 500;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -90,9 +106,67 @@ header .navbar-right .my_button {
 #jumbotron {
   height: 800px;
   background-image: url("../digitalocean-assets/img/jumbo.svg");
+  background-size: cover;
+  background-position: center;
+}
+#jumbotron h1 {
+  color: #fff;
+  padding-top: 200px;
+}
+#jumbotron [class*="col-"]:first-of-type {
+  padding-right: 100px;
+}
+#jumbotron [class*="col-"]:first-of-type p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5em;
+}
+#jumbotron .my_account {
+  margin-top: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+#jumbotron .my_account h3:last-of-type {
+  color: #006aff;
+}
+#jumbotron .my_account input {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+#jumbotron .my_account [name="create_account"] {
+  background-color: #006aff;
+  color: #fff;
+  border: 1px solid #006aff;
+}
+#jumbotron .my_account [name="create_account"]:hover {
+  background-color: #fff;
+  color: #006aff;
+}
+#jumbotron .my_account [name="signin_google"] {
+  background-color: #fff;
+  background-image: url("../digitalocean-assets/img/google-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid lightgrey;
 }
 
+/* media query */
+@media (max-width: 767px) {
+  #jumbotron h1 {
+    padding-top: 40px;
+    font-size: 40px;
+  }
+  #jumbotron .my_account {
+    margin-top: 30px;
+  }
+}
 /* collasso navbar a partire da 991px in giù */
+/* Stack Overflow */
 @media (max-width: 991px) {
   .navbar-header {
       float: none;

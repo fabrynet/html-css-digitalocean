@@ -12,16 +12,19 @@ body {
 .container {
   background-color: pink;
 }
-.container [class*="col-"] {
+.container .row [class*="col-"] {
   height: 150px;
   position: relative;
   border: 1px solid black;
 }
-.container [class*="col-"] > .row {
+#deployments > .row {
+  height: 300px;
+}
+.container .row [class*="col-"] > .row {
   height: 100%;
   background-color: lightcoral;
 }
-.container > [class*="col-"] > .row > [class*="col-"] {
+.container > .row [class*="col-"] > .row > [class*="col-"] {
   height: 100%;
   border-color: white;
 }

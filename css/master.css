@@ -17,14 +17,11 @@ body {
   position: relative;
   border: 1px solid black;
 }
-.container:last-child > div {
-  padding: 5px;
-}
-.container [class*="col-"] > .container {
+.container [class*="col-"] > .row {
   height: 100%;
   background-color: lightcoral;
 }
-.container > [class*="col-"] > .container > [class*="col-"] {
+.container > [class*="col-"] > .row > [class*="col-"] {
   height: 100%;
   border-color: white;
 }

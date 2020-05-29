@@ -14,7 +14,15 @@ main {
 p {
   color: #5b6987;
 }
-h1, h2, h3, h4 {
+a {
+  color:#006aff;
+  font-weight: 500;
+}
+a:hover {
+  color: #3333ff;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5 {
   color: #031b4e;
   font-weight: bold;
   font-size: 60px;
@@ -24,6 +32,12 @@ h2 {
 }
 h3 {
   font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 15px;
 }
 .my_button {
   color: #006aff;
@@ -37,6 +51,9 @@ h3 {
   background-color: #006aff;
   border: 1px solid #006aff;
   transition: 0.5s;
+}
+.my_grey {
+  background-color: #f3f5f9;
 }
 /* debug  */
 /* .container {
@@ -123,7 +140,7 @@ header .navbar-right .my_button {
 }
 #jumbotron .my_account {
   margin-top: 200px;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
@@ -155,6 +172,27 @@ header .navbar-right .my_button {
   border: 1px solid lightgrey;
 }
 
+/* customers */
+#customers [class*="col-"] {
+  padding: 50px 0;
+  text-align: center;
+}
+#customers h5 {
+  text-transform: uppercase;
+  color: #5b6987;
+  margin-bottom: 30px;
+}
+#customers .my_img_customers {
+  display: inline-block;
+}
+#customers .my_img_customers img {
+  height: 77px;
+}
+#customers [class*="col-"] div:last-of-type {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
 /* media query */
 @media (max-width: 767px) {
   #jumbotron h1 {
@@ -163,6 +201,21 @@ header .navbar-right .my_button {
   }
   #jumbotron .my_account {
     margin-top: 30px;
+  }
+}
+@media (min-width:768px) and (max-width: 991px) {
+  #jumbotron h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  #customers .my_img_customers {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #customers .my_img_customers {
+    width: 190px;
   }
 }
 /* collasso navbar a partire da 991px in giù */

@@ -269,7 +269,11 @@ header .navbar-right .my_button {
   text-align: center;
 }
 
-/* feauters */
+/* features */
+#features h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 /* service */
 
@@ -287,6 +291,9 @@ header .navbar-right .my_button {
   }
   h1, h2 {
     font-size: 30px;
+  }
+  .my_slider a {
+    display: none;
   }
   #jumbotron .my_jumbo {
     margin-top: 0;
@@ -308,7 +315,7 @@ header .navbar-right .my_button {
 }
 @media (min-width: 1200px) {
   #customers .my_img_customers {
-    width: 190px;
+    width: 185px;
   }
 }
 /* collasso navbar a partire da 991px in giù */

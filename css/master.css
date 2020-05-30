@@ -61,20 +61,19 @@ a:focus {
 h1, h2, h3, h4, h5 {
   color: #031b4e;
   font-weight: 600;
-  font-size: 55px;
   margin-bottom: 20px;
 }
-h2 {
-  font-size: 40px;
+h1 {
+  font-size: 55px;
 }
-h3 {
-  font-size: 30px;
+.my_bg_grey {
+  background-color: #f3f5f9;
 }
-h4 {
-  font-size: 20px;
+.my_font_white {
+  color: #fff;
 }
-h5 {
-  font-size: 15px;
+.my_text_center {
+  text-align: center;
 }
 .my_subtitle_lg {
   font-size: 24px;
@@ -147,13 +146,8 @@ h5 {
   font-size: 0.7em;
   padding: 0 5px;
 }
-.my_slider a {
+.my_carousel .my_slider a {
   font-size: 2em;
-}
-
-/* backgroung grigio */
-.my_bg_grey {
-  background-color: #f3f5f9;
 }
 
 /* header */
@@ -203,10 +197,6 @@ header .navbar-right .my_button {
 #jumbotron .my_jumbo {
   margin-top: 25%;
   margin-right: 10%;
-}
-#jumbotron .my_jumbo h1,
-#jumbotron .my_jumbo p {
-  color: #fff;
 }
 #jumbotron .my_account {
   margin-top: 25%;
@@ -276,12 +266,38 @@ header .navbar-right .my_button {
 }
 
 /* service */
+#service {
+  background-image: linear-gradient(0deg, #001e9a, #0048c5);
+  /* background-image: url("../digitalocean-assets/img/data-center-map.svg"); */
+}
+#service table tr {
+  border-bottom: 1px solid #fff;
+}
+#service table tr td {
+  border-top: 0;
+  padding: 10px 0;
+}
+#service table tr td:first-of-type {
+  width: 15%;
+}
+#service table tr td:last-of-type {
+  width: 20%;
+}
 
 /* carousel2 */
+#carousel2 {
+  text-align: center;
+}
 
 /* account */
 #account {
   padding: 60px 0;
+  background-image: linear-gradient(0deg, #001e9a, #0048c5);
+}
+
+/* footer */
+footer {
+  background-color: #031c4e;
 }
 
 /* media query */
@@ -289,7 +305,7 @@ header .navbar-right .my_button {
   section {
     padding: 50px 0;
   }
-  h1, h2 {
+  h1 {
     font-size: 30px;
   }
   .my_slider a {
@@ -304,7 +320,7 @@ header .navbar-right .my_button {
   }
 }
 @media (min-width:768px) and (max-width: 991px) {
-  h1, h2 {
+  h1 {
     font-size: 40px;
   }
 }
@@ -320,7 +336,7 @@ header .navbar-right .my_button {
 }
 /* collasso navbar a partire da 991px in giù */
 /* Stack Overflow */
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .navbar-header {
       float: none;
   }

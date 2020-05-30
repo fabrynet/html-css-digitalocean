@@ -143,6 +143,9 @@ h1 {
 }
 
 /* carousel custom */
+.my_carousel {
+  text-align: center;
+}
 .my_carousel img {
   width: 80%;
 }
@@ -160,10 +163,17 @@ h1 {
 /* social custom */
 .my_social {
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 .my_social a {
   display: inline-block;
-  padding: 0 0.2em;
+  padding: 0 0.5rem;
+}
+
+/* presentazione sezioni */
+.my_presentation {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* header */
@@ -240,7 +250,7 @@ header .navbar-right .my_button {
 
 /* customers */
 #customers {
-  padding: 50px 0;
+  padding: 60px 0;
   text-align: center;
 }
 #customers h5 {
@@ -260,21 +270,10 @@ header .navbar-right .my_button {
 }
 
 /* deployments */
-#deployments .container > .row:first-of-type {
-  text-align: center;
-  padding-bottom: 60px;
-}
 
-/* carousel1 */
-#carousel1 {
-  text-align: center;
-}
+/* carousel 1-2 */
 
 /* features */
-#features h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
 /* service */
 #service {
@@ -282,7 +281,6 @@ header .navbar-right .my_button {
   background-image: url("../digitalocean-assets/img/data-center-map.svg");
   background-position: center;
   background-size: cover;
-
 }
 #service table tr {
   border-bottom: 1px solid #fff;
@@ -297,11 +295,6 @@ header .navbar-right .my_button {
 #service table tr td:last-of-type {
   width: 30%;
   text-align: right;
-}
-
-/* carousel2 */
-#carousel2 {
-  text-align: center;
 }
 
 /* account */
@@ -342,6 +335,7 @@ footer a:hover {
 }
 footer ul {
   list-style-type: none;
+  margin-bottom: 25px;
 }
 footer ul li {
   padding: 5px 0;
@@ -377,6 +371,9 @@ footer ul li {
   .my_tabs li:hover {
     border-left: 0;
     border-bottom: 2px solid #006aff;
+  }
+  footer {
+    text-align: center;
   }
 }
 @media (min-width:768px) and (max-width: 991px) {

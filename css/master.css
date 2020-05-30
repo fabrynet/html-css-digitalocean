@@ -40,7 +40,7 @@ body {
   letter-spacing: 0.04em;
 }
 main {
-  margin-top: 60px;
+  margin-top: 59px;
 }
 section {
   padding: 100px 0;
@@ -176,6 +176,56 @@ h1 {
   text-align: center;
 }
 
+/* assistant */
+.my_assistant {
+  position: fixed;
+  z-index: 999;
+  width: 50px;
+  bottom: 50px;
+  right: 50px;
+}
+.my_assistant img {
+  width: 100%;
+}
+.my_assistant_circle {
+  display: none;
+  position: absolute;
+  bottom:35px;
+  right: 0;
+  font-size: 1.5em;
+  color: red;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.my_assistant_number {
+  display: none;
+  position: absolute;
+  bottom:36px;
+  right: 7px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+}
+.my_tooltip {
+  display: none;
+  position: absolute;
+  bottom: -12px;
+  right: 70px;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.my_assistant:hover {
+  cursor: pointer;
+}
+.my_assistant:hover .my_tooltip,
+.my_assistant:hover .my_assistant_circle,
+.my_assistant:hover .my_assistant_number  {
+  display: block;
+}
+
 /* header */
 /* ridefinizione stile navbar */
 header .navbar {
@@ -185,6 +235,8 @@ header .navbar {
 header .navbar-fixed-top {
   border-color: #fff;
   background-color: #fff;
+  /* border-bottom: 1px solid lightgrey; */
+  box-shadow: 1px 0px 5px lightgrey;
 }
 header .navbar-fixed-top a:hover,
 header .navbar-fixed-top a:focus {
@@ -384,6 +436,9 @@ footer ul li {
 @media (max-width: 1199px) {
   #customers .my_img_customers {
     width: 300px;
+  }
+  .my_assistant {
+    display: none;
   }
 }
 @media (min-width: 1200px) {

@@ -120,7 +120,7 @@ h1 {
   width: 100px;
 }
 .my_tabs li {
-  display: inline-block;
+  float: left;
   padding: 20px;
   border-left: 2px solid lightgrey;
 }
@@ -317,6 +317,26 @@ footer {
   }
   #jumbotron .my_account {
     margin-top: 0;
+  }
+  /* #deployments {
+    text-align: center;
+  }
+  #deployments [class*="col-"] {
+    margin-bottom: 20px;
+  } */
+  .my_tabs {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .my_tabs li {
+    width: 20%;
+    border-left: 0;
+    border-bottom: 2px solid lightgrey;
+  }
+  .my_tabs li:hover {
+    border-left: 0;
+    border-bottom: 2px solid #006aff;
   }
 }
 @media (min-width:768px) and (max-width: 991px) {

@@ -187,26 +187,19 @@ h1 {
 .my_assistant img {
   width: 100%;
 }
-.my_assistant_circle {
-  display: none;
-  position: absolute;
-  bottom:35px;
-  right: 0;
-  font-size: 1.5em;
-  color: red;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
 .my_assistant_number {
   display: none;
   position: absolute;
   bottom:36px;
-  right: 7px;
-  font-size: 1.2em;
+  right: 0;
+  padding: 0 6px;
   font-weight: bold;
   color: #fff;
+  background-color: red;
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
-.my_tooltip {
+.my_assistant_tooltip {
   display: none;
   position: absolute;
   bottom: -12px;
@@ -220,8 +213,7 @@ h1 {
 .my_assistant:hover {
   cursor: pointer;
 }
-.my_assistant:hover .my_tooltip,
-.my_assistant:hover .my_assistant_circle,
+.my_assistant:hover .my_assistant_tooltip,
 .my_assistant:hover .my_assistant_number  {
   display: block;
 }

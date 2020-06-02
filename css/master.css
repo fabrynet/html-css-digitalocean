@@ -256,6 +256,43 @@ header .navbar-right .my_button {
   margin: 7px 0;
 }
 
+/* bonus dropdown menu */
+.dropdown-menu {
+  min-width: 100%;
+  /* left: 100px; */
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background-color: transparent;
+}
+.dropdown-menu > li > a {
+  margin-top: 20px;
+}
+.dropdown-menu > li > a > img {
+  width: 45px;
+}
+.dropdown-menu h4 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.my_dropdown_title {
+  display: inline-block;
+  vertical-align: middle;
+}
+.my_dropdown_title h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.my_dropdown_title span {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+
 /* jumbotron */
 #jumbotron {
   min-height: 800px;
@@ -269,6 +306,7 @@ header .navbar-right .my_button {
 #jumbotron .my_account {
   margin: 20% auto;
   padding: 10px 20px 20px 20px;
+  max-width: 350px;
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
